@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="loginbox radius">
+      <h2 style="color: #141823; text-align: left;">Create a new account</h2>
+      <div class="loginboxinner radius">
+        <div class="loginheader">
+          <h4 style="text-align: left;" class="title">It's quick and easy.</h4>
+        </div>
+        <!--loginheader-->
+
+        <div class="loginform">
+          <form id="login" action="#" method="GET">
+            <p>
+              <input
+                class="allinput"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="First name"
+                value=""
+                class="radius mini"
+                required
+              />
+              <input
+                class="allinput"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Surname"
+                value=""
+                class="radius mini"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="allinput"
+                type="text"
+                id="no_email"
+                name="no_email"
+                placeholder="Mobile number or email address"
+                value=""
+                class="radius"
+                required
+              />
+            </p>
+            <p>
+              <input
+                class="allinput"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="New password"
+                class="radius"
+                required
+              />
+            </p>
+
+            <p id="btitle">Birthday</p>
+            <div class="birth">
+              <select name="" class="form-dropdown" id="selectdate">
+                <option value="date">Date</option>
+              </select>
+              <select name="birthDate[month]" class="form-dropdown">
+                <option value="January"> Jan </option>
+                <option value="February"> Feb </option>
+                <option value="March"> Mar </option>
+                <option value="April"> Apr </option>
+                <option value="May"> May </option>
+                <option value="June"> Jun </option>
+                <option value="July"> Jul </option>
+                <option value="August"> Aug </option>
+                <option value="September"> Sep </option>
+                <option value="October"> Oct </option>
+                <option value="November"> Nov </option>
+                <option value="December"> Dec </option>
+              </select>
+
+              <select class="form-dropdown" name="" id="selectyear">
+                <option value="year">Year</option>
+              </select>
+            </div>
+
+            <p id="btitle">Gender</p>
+            <div class="gen">
+              <input
+                onclick="hideElement()"
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+              />
+              <label for="female">Female</label>
+              <input
+                onclick="hideElement()"
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+              />
+
+              <label for="male">Male</label>
+              <input
+                onclick="addElement()"
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+              />
+              <label for="other">Custom</label>
+
+              <div id="addcustom">
+                <select class="pronoun" name="" class="form-dropdown">
+                  <option value="">Select your pronoun</option>
+                  <option value="">She: "Wish her a happy birthday!"</option>
+                  <option value="">He: "Wish him a happy birthday!"</option>
+                  <option value="">They: "Wish them a happy birthday!"</option>
+                </select>
+                <br /><br />
+                <span>Your pronoun is visible to everyone.</span>
+                <input
+                  class="allinput"
+                  placeholder="Gender (optional)"
+                  type="text"
+                />
+              </div>
+            </div>
+
+            <p id="agreement">
+              By clicking Sign Up, you agree to our
+              <a href="" target="_blank" rel="nofollow">Terms</a>,
+              <a href="" target="_blank" rel="nofollow">Data Policy</a>
+              and
+              <a href="" target="_blank" rel="nofollow">Cookie Policy</a>. You
+              may receive SMS notifications from us and can opt out at any time.
+            </p>
+            <p>
+              <button class="radius title" name="client_login">
+                Sign Up
+              </button>
+            </p>
+          </form>
+        </div>
+        <!--loginform-->
+      </div>
+      <!--loginboxinner-->
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
